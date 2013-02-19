@@ -1,0 +1,40 @@
+
+Make life easier when you're validating data in your Rails Models with this handy Sublime Snippet.
+
+
+Need to validate more than one piece of data in an attribute and you're not worried about a custom error message?
+
+This is the snippet for you.
+
+Sublime Text 2 has snippets for most of the different attribute validations you need, but none
+for the complete 'validations' hash, at least that I could find. So, I put one together to save some typing.
+
+A lot of model data validations look something like this:
+
+    validates_presence_of :email
+    validates_length_of :email, :maximum => 100
+    validates_format_of :email, :with => EMAIL_REGEX
+    validates_confirmation_of :email
+
+As long as a custom error message isn't needed this can be vastly simplified by using the 
+'validates' hash, which rolls the whole thing into one ball of wax.
+
+Typing 'vsexy' and hitting the tab key gives you this:
+
+
+    validates :attribute,
+                    :presence => boolean,
+                    :numericality => boolean,
+                    :length => {:within => 0..10},
+                    :format => regex,
+                    :inclusion => {:in => [array_or_range]},
+                    :exclusion => {:in => [array_or_range]},
+                    :acceptance => boolean,
+                    :uniqueness => boolean,
+                    :confirmation => boolean
+
+':attribute' will be highlighted so you can start typing right away. Hitting the tab key moves
+the highlight to each value that needs to be entered, and lines can be deleted or commented out
+as necessary.
+
+Save some keystrokes!

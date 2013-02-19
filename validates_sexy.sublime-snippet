@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[validates :${1:attribute},
+    			:presence => ${2:boolean},
+    			:numericality => ${3:boolean},
+    			:length => {:within => ${4:0..10}},
+    			:format => ${5:regex},
+    			:inclusion => {:in => [${6:array_or_range}]},
+    			:exclusion => {:in => [${7:array_or_range}]},
+    			:acceptance => ${8:boolean},
+    			:uniqueness => ${9:boolean},
+    			:confirmation => ${10:boolean}]]></content>
+    <tabTrigger>vsexy</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>sexy validate</description>
+</snippet>
