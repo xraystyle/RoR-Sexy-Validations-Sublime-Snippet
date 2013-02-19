@@ -41,5 +41,6 @@ Save some keystrokes!
 
 Installation: 
 
-	Download the snippet and save it in "~/Library/Application Support/Sublime Text 2/Packages/Rails" on a Mac
+	Download the snippet and save it in 
+	"~/Library/Application Support/Sublime Text 2/Packages/Rails" on a Mac
 	or wherever the hell things go on Windows boxes.
